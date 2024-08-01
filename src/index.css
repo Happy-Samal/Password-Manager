@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .myContainer{
+        @apply container px-56 py-10  mx-auto;
+    }
+}
+
+@layer components{
+    .tdFlex{
+        @apply justify-center items-center flex gap-2;
+    }
+}
