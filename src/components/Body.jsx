@@ -51,10 +51,8 @@ function Body() {
         })
         setData(Data)
     }
-    const deleteClick = (id) => {
-        let cnf = confirm("Are sure to delete!")
-        if (cnf) {
-            toast('🦄 Password deleted', {
+    const deleteToast = ()=>{
+        toast('🦄 Password deleted', {
                 position: "top-right",
                 autoClose: 1000,
                 hideProgressBar: false,
@@ -63,8 +61,12 @@ function Body() {
                 draggable: true,
                 progress: undefined,
                 theme: "light",
-            });}
-        if(cnf){
+            });
+    }
+    const deleteClick = (id) => {
+        let cnf = confirm("Are sure to delete!")
+        if (cnf) {
+            deleteToast();
             let newData = data.filter((e) => {
                 return e.id != id
             })
