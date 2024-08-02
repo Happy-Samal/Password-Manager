@@ -51,16 +51,9 @@ function Body() {
         })
         setData(Data)
     }
-    const deleteToast = ()=>{
-        toast('🦄 Password deleted', {
-                position: "top-right",
-                autoClose: 1000,
-            });
-    }
     const deleteClick = (id) => {
         let cnf = confirm("Are sure to delete!")
         if (cnf) {
-            deleteToast();
             let newData = data.filter((e) => {
                 return e.id != id
             })
