@@ -31,7 +31,7 @@ function Body() {
         else {
             toast('🦄 Password is invalid', {
                 position: "top-right",
-                autoClose: 5000,
+                autoClose: 1000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -54,21 +54,23 @@ function Body() {
     const deleteClick = (id) => {
         let cnf = confirm("Are sure to delete!")
         if (cnf) {
-            let newData = data.filter((e) => {
-                return e.id != id
-            })
-            setData(newData)
-            localStorage.setItem("OurPasswords",JSON.stringify(newData))
             toast('🦄 Password deleted', {
                 position: "top-right",
-                autoClose: 5000,
+                autoClose: 1000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
                 theme: "light",
-            });
+            });}
+        if(cnf){
+            let newData = data.filter((e) => {
+                return e.id != id
+            })
+            setData(newData)
+            localStorage.setItem("OurPasswords",JSON.stringify(newData))
+            
         }
     }
     const eyeClick = () => {
@@ -82,7 +84,7 @@ function Body() {
         navigator.clipboard.writeText(text)
         toast('🦄 copy to clipboard', {
             position: "top-right",
-            autoClose: 5000,
+            autoClose: 1000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -95,7 +97,7 @@ function Body() {
         <>
             <ToastContainer
                 position="top-right"
-                autoClose={5000}
+                autoClose={1000}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick
