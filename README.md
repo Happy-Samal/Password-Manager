@@ -6,7 +6,7 @@ Password Manager is a web application designed for save your password on your lo
 
 ## Website host on
 
-click - https://password-manager-happy-samal.vercel.app/
+click - https://password-manager-localstorage.vercel.app/
 
 ## Technologies Used
 
