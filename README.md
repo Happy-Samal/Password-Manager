@@ -10,9 +10,9 @@ click - https://password-manager-localstorage.vercel.app/
 
 ## Technologies Used
 
-- **Frontend**: React.js.  
+- **Frontend**: React.js  
 - **Styling**: Tailwind CSS
-- 
+
 ## Getting Started
 
 ### Prerequisites
@@ -26,7 +26,7 @@ click - https://password-manager-localstorage.vercel.app/
 
    ```sh
    git clone https://github.com/Happy-Samal/Password-Manager.git
-   cd Todo-List
+   cd Password-Manager
     ```
 
 1. **Install dependencies:**
